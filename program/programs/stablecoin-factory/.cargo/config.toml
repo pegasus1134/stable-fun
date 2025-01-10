@@ -1,0 +1,5 @@
+[target.bpfel-unknown-unknown]
+runner = "solana-program-test"
+
+[build]
+target = "bpfel-unknown-none"

@@ -1,0 +1,20 @@
+// vercel.json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "env": {
+    "VITE_RPC_ENDPOINT": "https://api.mainnet-beta.solana.com",
+    "VITE_PROGRAM_ID": "StabF1111111111111111111111111111111111111"
+  }
+}
